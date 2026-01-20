@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blinky - Partners</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="67x67"
+      href="images/fav-icon/icon.png"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/color-one.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      /* Form visibility management */
+      section {
+        display: none;
+      }
+
+      section.active {
+        display: block;
+        animation: fadeIn 0.3s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Contact section always visible */
+      .contact-us-section {
+        display: block !important;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="vendor/html5shiv.js"></script>
+      <script src="vendor/respond.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="main-page-wrapper home-page-one">
+      <!-- Loading Transition -->
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+      </div>
+
+      <div class="html-top-content contact-page">
+        <!-- Theme Header -->
+        <header class="theme-main-header">
+          <div class="container">
+            <div class="menu-wrapper clearfix">
+              <img
+                src="images/home/logo-shape2.png"
+                alt=""
+                class="shape-one wow slideInDown"
+                data-wow-duration="1.8s"
+              />
+              <div class="logo float-left">
+                <a href="index.html"
+                  ><img src="images/logo/logo.png" alt="Logo"
+                /></a>
+              </div>
+
+              <nav class="navbar theme-main-menu float-right">
+                <div class="navbar-header clearfix">
+                  <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar-collapse-1"
+                    aria-expanded="false"
+                  >
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <!-- <li><a href="index.html#theme-main-banner">Home</a></li> -->
+                    <li>
+                      <a
+                        href="contact.html#partners"
+                        class="form-link"
+                        data-form="partners"
+                        >Become a Partner</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html#delivery"
+                        class="form-link"
+                        data-form="delivery"
+                        >Deliver for Blinky</a
+                      >
+                    </li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#app">App</a></li>
+                    <li><a href="terms.html">Our Terms</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <!-- Theme Inner Banner -->
+        <div
+          class="theme-inner-banner"
+          style="background-image: url('images/home/banner-partnership.jpg')"
+        >
+          <div class="opacity">
+            <div class="banner-shape wow slideInRight" data-wow-duration="1.8s">
+              <img src="images/home/banner-shape-contact.png" alt="" />
+            </div>
+            <div class="container clearfix">
+              <div class="wrapper float-right">
+                <h2 class="title">Let's Partner</h2>
+                <p>
+                  We work with merchants, delivery partners, and local teams to
+                  build a trusted delivery network that benefits everyone
+                  involved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner & Delivery Forms -->
+        <div class="container">
+          <!-- DELIVERY SECTION -->
+          <section id="delivery">
+            <h2>🚚 Deliver for Blinky</h2>
+            <p class="section-subtitle">
+              Join our growing network of delivery partners and earn on your own
+              schedule. Fast, reliable, and rewarding.
+            </p>
+
+            <div id="deliveryAlert" class="alert"></div>
+
+            <form id="deliveryForm" class="delivery-form">
+              <input type="hidden" name="formType" value="delivery" />
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>First Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    maxlength="50"
+                    placeholder="John"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label>Last Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    maxlength="50"
+                    placeholder="Doe"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Phone Number <span class="required">*</span></label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+961 71 234 567"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Nationality <span class="required">*</span></label>
+                  <select name="nationality" required>
+                    <option value="">Select your nationality...</option>
+                  </select>
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label>Date of Birth <span class="required">*</span></label>
+                  <input type="date" name="dob" min="1930-01-01" required />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label
+                    >Current Location <span class="required">*</span></label
+                  >
+                  <select name="currentLocation" required>
+                    <option value="">Select a city...</option>
+                  </select>
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label>Employment Type <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="employmentType"
+                    maxlength="10"
+                    placeholder="Full-time or Part-time"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Preferred Work Location
+                  <span class="required">*</span></label
+                >
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      name="workLocation"
+                      value="beirut"
+                      id="beirut"
+                      required
+                    />
+                    <label for="beirut">Beirut</label>
+                  </div>
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      name="workLocation"
+                      value="dahiye"
+                      id="dahiye"
+                    />
+                    <label for="dahiye">Dahiye</label>
+                  </div>
+                </div>
+                <div class="error-message"></div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  >Do you own a motorbike?
+                  <span class="required">*</span></label
+                >
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      name="motorbike"
+                      value="yes"
+                      id="motorbike-yes"
+                      required
+                    />
+                    <label for="motorbike-yes">Yes</label>
+                  </div>
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      name="motorbike"
+                      value="no"
+                      id="motorbike-no"
+                    />
+                    <label for="motorbike-no">No</label>
+                  </div>
+                </div>
+                <div class="error-message"></div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn-submit">Apply Now</button>
+                <button type="reset" class="btn-reset">Clear Form</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- MERCHANTS SECTION -->
+          <section id="partners">
+            <h2>🏪 Become a Partner Merchant</h2>
+            <p class="section-subtitle">
+              Expand your restaurant or store's reach with Blinky. Connect with
+              thousands of customers and grow your business.
+            </p>
+
+            <div id="partnersAlert" class="alert"></div>
+
+            <form id="partnersForm" class="partners-form">
+              <input type="hidden" name="formType" value="merchant" />
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>First Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    maxlength="50"
+                    placeholder="John"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+                <div class="form-group">
+                  <label>Last Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    maxlength="50"
+                    placeholder="Doe"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Email <span class="required">*</span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid full">
+                <div class="form-group">
+                  <label
+                    >Store/Restaurant Name
+                    <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="storeName"
+                    maxlength="100"
+                    placeholder="Your business name"
+                    required
+                  />
+                  <div class="char-count">
+                    <span class="current">0</span>/100
+                  </div>
+                  <div class="error-message"></div>
+                </div>
+              </div>
+
+              <div class="form-grid full">
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea
+                    name="message"
+                    placeholder="Tell us about your business and why you'd like to partner with Blinky..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="info-box">
+                <p>
+                  💡 <strong>Quick Path:</strong>
+                  <a href="index.html#download-section" target="_blank"
+                    >Download the app</a
+                  >, and sign up as a merchant directly in-app for faster
+                  onboarding!
+                </p>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn-submit">
+                  Send Application
+                </button>
+                <button type="reset" class="btn-reset">Clear Form</button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-us-section" id="contact">
+          <!-- Background Shape (Decorative) -->
+          <div class="contact-bg-shape" aria-hidden="true">
+            <img
+              src="images/home/shape-20.png"
+              alt=""
+              class="shape-one left-side wow slideInLeft"
+              data-wow-duration="1.5s"
+              data-wow-delay="0.2s"
+            />
+          </div>
+
+          <!-- Section Header -->
+          <header class="contact-section-header theme-title">
+            <h2>Get In Touch</h2>
+          </header>
+
+          <!-- Main Content Grid -->
+          <div class="contact-main-container">
+            <!-- ===================== -->
+            <!-- Contact Information -->
+            <!-- ===================== -->
+            <div class="contact-left-column">
+              <div class="contact-info-wrapper">
+                <h3>Contact Information</h3>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Phone</h4>
+                    <a href="tel:+96121788774">+961 21 788 774</a>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>WhatsApp</h4>
+                    <a
+                      href="https://wa.me/96176337790"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      +961 76 337 790
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Email</h4>
+                    <a href="mailto:info@blinky.com">info@blinky.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Instagram</h4>
+                    <a href="https://www.instagram.com/blinky.app"
+                      >@blinky.app</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Facebook</h4>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61583591168425"
+                      >@blinky.app</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>TikTok</h4>
+                    <a
+                      href="https://www.tiktok.com/@blinky.app?is_from_webapp=1&sender_device=pc"
+                      >@blinky.app</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===================== -->
+            <!-- Google Map -->
+            <!-- ===================== -->
+            <div class="contact-middle-column">
+              <div
+                class="google-map"
+                role="region"
+                aria-label="Company location map"
+              >
+                <div class="map-canvas"></div>
+              </div>
+            </div>
+
+            <!-- ===================== -->
+            <!-- Contact Form -->
+            <!-- ===================== -->
+            <div class="contact-right-column">
+              <div class="main-form-wrapper">
+                <h3>Send a Message</h3>
+
+                <form
+                  action="inc/sendemail.php"
+                  method="post"
+                  class="contact-us-form form-validation"
+                  novalidate
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    aria-label="Your Name"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    aria-label="Email Address"
+                  />
+
+                  <input
+                    type="text"
+                    name="sub"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                  />
+
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    aria-label="Your Message"
+                  ></textarea>
+
+                  <div class="theme-button">
+                    <input type="submit" value="Send Request" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================== -->
+          <!-- Alerts -->
+          <!-- ===================== -->
+
+          <div class="alert-wrapper" id="alert-success" role="alert">
+            <div id="success">
+              <button class="closeAlert" aria-label="Close alert">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <div class="wrapper">
+                <p>Your message was sent successfully.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="alert-wrapper" id="alert-error" role="alert">
+            <div id="error">
+              <button class="closeAlert" aria-label="Close alert">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <div class="wrapper">
+                <p>Sorry! Something went wrong.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="blinky-footer">
+          <div class="container">
+            <div class="footer-top row">
+              <div class="col-md-4 col-sm-12 footer-brand">
+                <img
+                  src="images/logo/logo.png"
+                  alt="Blinky"
+                  class="footer-logo"
+                />
+                <p class="tagline">Fast, reliable delivery across Lebanon.</p>
+              </div>
+
+              <div class="col-md-2 col-sm-6 footer-links">
+                <h6>Legal</h6>
+                <ul>
+                  <li><a href="terms.html">Terms & Conditions</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-2 col-sm-6 footer-links">
+                <h6>Company</h6>
+                <ul>
+                  <li><a href="index.html#features">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-4 col-sm-12 footer-social">
+                <h6>Connect with us</h6>
+                <ul class="social-list">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61583591168425"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/blinky.app"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@blinky.app?is_from_webapp=1&sender_device=pc"
+                      ><i class="fa-brands fa-tiktok"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/96176337790"
+                      ><i class="fa-brands fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="tel:0096121788774"
+                      ><i class="fa-solid fa-phone"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@blinkylb.com"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <span
+                >© 2026 KawtharSafa in collaboration with AimExperts — All
+                rights reserved</span
+              >
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Scroll Top Button -->
+      <button class="scroll-top tran3s color-one-bg">
+        <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+      </button>
+
+      <!-- Scripts -->
+      <script src="vendor/jquery.2.2.3.min.js"></script>
+      <script src="vendor/bootstrap/bootstrap.min.js"></script>
+      <script src="vendor/WOW-master/dist/wow.min.js"></script>
+      <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+      <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+      <script src="vendor/multislider/multislider.min.js"></script>
+      <script src="vendor/jquery.appear.js"></script>
+      <script src="vendor/jquery.countTo.js"></script>
+      <script src="vendor/contact-form/validate.js"></script>
+      <script src="vendor/contact-form/jquery.form.js"></script>
+
+      <!-- Leaflet Map Libraries -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+      <!-- Your custom scripts -->
+      <script src="js/theme.js"></script>
+      <!-- <script src="js/map-script.js"></script> -->
+
+      <!-- Map Script -->
+      <script>
+        // Initialize map when DOM is ready
+        document.addEventListener("DOMContentLoaded", initMap);
+
+        function initMap() {
+          const mapDiv = document.querySelector(".map-canvas");
+
+          if (!mapDiv) {
+            console.error("Map container not found");
+            return;
+          }
+
+          // Check if Leaflet is loaded
+          if (typeof L === "undefined") {
+            console.error(
+              "Leaflet library not loaded. Make sure to include Leaflet CSS and JS in your HTML head."
+            );
+            return;
+          }
+
+          // Default location (Beirut) - Replace with actual location later
+          const defaultLocation = {
+            lat: 33.885651,
+            lng: 35.48568,
+            name: "Blinky HQ",
+            address: "Beirut, Lebanon",
+          };
+
+          // Initialize map
+          const map = L.map(mapDiv).setView(
+            [defaultLocation.lat, defaultLocation.lng],
+            14
+          );
+
+          // Add OpenStreetMap tile layer (free)
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19,
+          }).addTo(map);
+
+          // Add marker
+          const marker = L.marker([defaultLocation.lat, defaultLocation.lng])
+            .bindPopup(
+              `
+      <div style="font-family: Arial, sans-serif; width: 200px;">
+        <h4 style="margin: 0 0 8px 0; color: #333;">${defaultLocation.name}</h4>
+        <p style="margin: 0; font-size: 14px; color: #666;">${defaultLocation.address}</p>
+      </div>
+    `
+            )
+            .addTo(map);
+
+          // Open popup on marker click
+          marker.openPopup();
+
+          // Store map reference for later updates
+          window.blinkeyMap = map;
+        }
+
+        /**
+         * Update map location dynamically
+         *
+         * updateMapLocation({
+         *   lat: 33.8547,
+         *   lng: 35.8623,
+         *   name: 'Blinky Office',
+         *   address: 'Your actual address'
+         * });
+         */
+        function updateMapLocation(location) {
+          if (!window.blinkeyMap) {
+            console.error("Map not initialized yet");
+            return;
+          }
+
+          const map = window.blinkeyMap;
+
+          // Clear existing layers (markers)
+          map.eachLayer((layer) => {
+            if (layer instanceof L.Marker) {
+              map.removeLayer(layer);
+            }
+          });
+
+          // Set new center
+          map.setView([location.lat, location.lng], 14);
+
+          // Add new marker
+          L.marker([location.lat, location.lng])
+            .bindPopup(
+              `
+      <div style="font-family: Arial, sans-serif; width: 200px;">
+        <h4 style="margin: 0 0 8px 0; color: #333;">${location.name}</h4>
+        <p style="margin: 0; font-size: 14px; color: #666;">${location.address}</p>
+      </div>
+    `
+            )
+            .addTo(map)
+            .openPopup();
+        }
+      </script>
+
+      <script>
+        // ======================================
+        // FORM VISIBILITY MANAGEMENT SYSTEM
+        // ======================================
+
+        const FormManager = {
+          // Initialize form visibility on page load
+          init() {
+            this.handleHashChange();
+            window.addEventListener("hashchange", () =>
+              this.handleHashChange()
+            );
+            this.setupNavLinks();
+          },
+
+          // Handle URL hash changes
+          handleHashChange() {
+            const hash = window.location.hash.substring(1);
+
+            if (hash === "partners" || hash === "delivery") {
+              this.showForm(hash);
+            } else if (!hash) {
+              // If no hash, show both forms (default behavior)
+              document.getElementById("delivery").classList.add("active");
+              document.getElementById("partners").classList.add("active");
+            }
+          },
+
+          // Show specific form and hide others
+          showForm(formId) {
+            const delivery = document.getElementById("delivery");
+            const partners = document.getElementById("partners");
+
+            if (formId === "partners") {
+              partners.classList.add("active");
+              delivery.classList.remove("active");
+            } else if (formId === "delivery") {
+              delivery.classList.add("active");
+              partners.classList.remove("active");
+            }
+          },
+
+          // Setup navigation link click handlers
+          setupNavLinks() {
+            document.querySelectorAll(".form-link").forEach((link) => {
+              link.addEventListener("click", (e) => {
+                const formType = link.getAttribute("data-form");
+                // Delay to allow hash change and smooth scroll
+                setTimeout(() => this.showForm(formType), 50);
+              });
+            });
+          },
+        };
+
+        // ======================================
+        // UTILITIES
+        // ======================================
+
+        const showAlert = (id, type, message) => {
+          const alertEl = document.getElementById(id);
+          alertEl.className = `alert show alert-${type}`;
+          alertEl.innerHTML = `
+            <i class="fas fa-${
+              type === "success" ? "check-circle" : "exclamation-circle"
+            }"></i>
+            <span>${message}</span>
+          `;
+          setTimeout(() => alertEl.classList.remove("show"), 4000);
+        };
+
+        const showError = (input, message) => {
+          input.classList.add("error");
+          const errorDiv = input.parentElement.querySelector(".error-message");
+          if (errorDiv) {
+            errorDiv.textContent = message;
+            errorDiv.classList.add("show");
+          }
+        };
+
+        const clearError = (input) => {
+          input.classList.remove("error");
+          const errorDiv = input.parentElement.querySelector(".error-message");
+          if (errorDiv) {
+            errorDiv.classList.remove("show");
+            errorDiv.textContent = "";
+          }
+        };
+
+        // ======================================
+        // VALIDATION FUNCTIONS
+        // ======================================
+
+        const validateName = (value) => {
+          const trimmed = value.trim();
+          if (!trimmed) return "This field is required";
+          if (!/^[a-zA-Z\s'-]+$/.test(trimmed))
+            return "Only letters, spaces, hyphens, and apostrophes allowed";
+          return null;
+        };
+
+        const validateEmail = (value) => {
+          const trimmed = value.trim();
+          if (!trimmed) return "Email is required";
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(trimmed)) return "Please enter a valid email";
+          return null;
+        };
+
+        const validatePhone = (value) => {
+          const trimmed = value.trim();
+          if (!trimmed) return "Phone number is required";
+          const phoneRegex = /^\+?[0-9\s\-\(\)]{7,}$/;
+          if (!phoneRegex.test(trimmed))
+            return "Please enter a valid phone number";
+          return null;
+        };
+
+        // ======================================
+        // FETCH COUNTRIES
+        // ======================================
+
+        const loadCountries = async () => {
+          try {
+            const response = await fetch(
+              "https://countriesnow.space/api/v0.1/countries"
+            );
+
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            // Extract countries array from API response
+            if (!data.data || !Array.isArray(data.data)) {
+              throw new Error("Invalid data format received");
+            }
+
+            const countries = data.data.map((c) => c.country).sort();
+            const select = document.querySelector('select[name="nationality"]');
+
+            countries.forEach((country) => {
+              const option = document.createElement("option");
+              option.value = country;
+              option.textContent = country;
+              select.appendChild(option);
+            });
+          } catch (error) {
+            console.error("Error loading countries:", error);
+            // Fallback to basic country list if API fails
+            addFallbackCountries();
+          }
+        };
+
+        const addFallbackCountries = () => {
+          const countries = [
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Andorra",
+            "Angola",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belgium",
+            "Belize",
+            "Benin",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia and Herzegovina",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Cape Verde",
+            "Central African Republic",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombia",
+            "Comoros",
+            "Congo",
+            "Costa Rica",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Czech Republic",
+            "Czechia",
+            "Denmark",
+            "Djibouti",
+            "Dominica",
+            "Dominican Republic",
+            "East Timor",
+            "Ecuador",
+            "Egypt",
+            "El Salvador",
+            "Equatorial Guinea",
+            "Eritrea",
+            "Estonia",
+            "Eswatini",
+            "Ethiopia",
+            "Fiji",
+            "Finland",
+            "France",
+            "Gabon",
+            "Gambia",
+            "Georgia",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea-Bissau",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "Iceland",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Jamaica",
+            "Japan",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Kosovo",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Laos",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Marshall Islands",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Micronesia",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Myanmar",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "North Korea",
+            "North Macedonia",
+            "Norway",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Palestine",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Philippines",
+            "Poland",
+            "Portugal",
+            "Qatar",
+            "Romania",
+            "Russia",
+            "Rwanda",
+            "Saint Kitts and Nevis",
+            "Saint Lucia",
+            "Saint Vincent and the Grenadines",
+            "Samoa",
+            "San Marino",
+            "Sao Tome and Principe",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Slovakia",
+            "Slovenia",
+            "Solomon Islands",
+            "Somalia",
+            "South Africa",
+            "South Korea",
+            "South Sudan",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Sweden",
+            "Switzerland",
+            "Syria",
+            "Taiwan",
+            "Tajikistan",
+            "Tanzania",
+            "Thailand",
+            "Timor-Leste",
+            "Togo",
+            "Tonga",
+            "Trinidad and Tobago",
+            "Tunisia",
+            "Turkey",
+            "Turkmenistan",
+            "Tuvalu",
+            "Uganda",
+            "Ukraine",
+            "United Arab Emirates",
+            "United Kingdom",
+            "United States",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Vatican City",
+            "Venezuela",
+            "Vietnam",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe",
+          ];
+
+          const select = document.querySelector('select[name="nationality"]');
+          countries.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country;
+            option.textContent = country;
+            select.appendChild(option);
+          });
+        };
+
+        // ======================================
+        // LEBANESE CITIES
+        // ======================================
+
+        const lebaneseCities = [
+          "Beirut",
+          "Dahiye",
+          "Tripoli",
+          "Sidon",
+          "Tyre",
+          "Baalbek",
+          "Chtaura",
+          "Jbeil",
+          "Jounieh",
+          "Byblos",
+          "Batroun",
+          "Koura",
+          "Kasrawan",
+          "Mount Lebanon",
+          "Bekaa Valley",
+        ];
+
+        const initializeCitySelect = () => {
+          const select = document.querySelector(
+            'select[name="currentLocation"]'
+          );
+          lebaneseCities.forEach((city) => {
+            const option = document.createElement("option");
+            option.value = city;
+            option.textContent = city;
+            select.appendChild(option);
+          });
+        };
+
+        // ======================================
+        // CHARACTER COUNT
+        // ======================================
+
+        document
+          .querySelector('input[name="storeName"]')
+          ?.addEventListener("input", (e) => {
+            const count = e.target.value.length;
+            e.target.parentElement.querySelector(".current").textContent =
+              count;
+          });
+
+        // ======================================
+        // DELIVERY FORM SUBMISSION
+        // ======================================
+
+        document
+          .getElementById("deliveryForm")
+          .addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            let isValid = true;
+            const form = e.target;
+
+            const firstName = form.querySelector('input[name="firstName"]');
+            const firstNameError = validateName(firstName.value);
+            if (firstNameError) {
+              showError(firstName, firstNameError);
+              isValid = false;
+            } else {
+              clearError(firstName);
+            }
+
+            const lastName = form.querySelector('input[name="lastName"]');
+            const lastNameError = validateName(lastName.value);
+            if (lastNameError) {
+              showError(lastName, lastNameError);
+              isValid = false;
+            } else {
+              clearError(lastName);
+            }
+
+            const phone = form.querySelector('input[name="phone"]');
+            const phoneError = validatePhone(phone.value);
+            if (phoneError) {
+              showError(phone, phoneError);
+              isValid = false;
+            } else {
+              clearError(phone);
+            }
+
+            // Validate other required fields
+            const requiredFields = [
+              "nationality",
+              "dob",
+              "currentLocation",
+              "employmentType",
+            ];
+            requiredFields.forEach((fieldName) => {
+              const field = form.querySelector(`[name="${fieldName}"]`);
+              if (!field.value) {
+                showError(field, "This field is required");
+                isValid = false;
+              } else {
+                clearError(field);
+              }
+            });
+
+            // Validate radio buttons
+            const workLocation = form.querySelector(
+              'input[name="workLocation"]:checked'
+            );
+            const motorbike = form.querySelector(
+              'input[name="motorbike"]:checked'
+            );
+
+            if (!workLocation) {
+              showError(
+                form.querySelector('input[name="workLocation"]'),
+                "Please select a work location"
+              );
+              isValid = false;
+            }
+
+            if (!motorbike) {
+              showError(
+                form.querySelector('input[name="motorbike"]'),
+                "Please answer the motorbike question"
+              );
+              isValid = false;
+            }
+
+            if (isValid) {
+              try {
+                const formData = new FormData(form);
+
+                const response = await fetch("inc/sendemail.php", {
+                  method: "POST",
+                  body: formData,
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                  showAlert(
+                    "deliveryAlert",
+                    "success",
+                    "Application submitted successfully! We'll contact you soon."
+                  );
+                  form.reset();
+                } else {
+                  showAlert(
+                    "deliveryAlert",
+                    "error",
+                    result.message || "Error submitting application"
+                  );
+                }
+              } catch (error) {
+                console.error("Form submission error:", error);
+                showAlert(
+                  "deliveryAlert",
+                  "error",
+                  "Error submitting application. Please try again."
+                );
+              }
+            } else {
+              showAlert(
+                "deliveryAlert",
+                "error",
+                "Please fix the errors above"
+              );
+            }
+          });
+        // ======================================
+        // PARTNERS FORM SUBMISSION
+        // ======================================
+
+        document
+          .getElementById("partnersForm")
+          .addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            let isValid = true;
+            const form = e.target;
+
+            // Validate firstName
+            const firstName = form.querySelector('input[name="firstName"]');
+            const firstNameError = validateName(firstName.value);
+            if (firstNameError) {
+              showError(firstName, firstNameError);
+              isValid = false;
+            } else {
+              clearError(firstName);
+            }
+
+            // Validate lastName
+            const lastName = form.querySelector('input[name="lastName"]');
+            const lastNameError = validateName(lastName.value);
+            if (lastNameError) {
+              showError(lastName, lastNameError);
+              isValid = false;
+            } else {
+              clearError(lastName);
+            }
+
+            // Validate email
+            const email = form.querySelector('input[name="email"]');
+            const emailError = validateEmail(email.value);
+            if (emailError) {
+              showError(email, emailError);
+              isValid = false;
+            } else {
+              clearError(email);
+            }
+
+            // Validate storeName
+            const storeName = form.querySelector('input[name="storeName"]');
+            if (!storeName.value.trim()) {
+              showError(storeName, "Store/Restaurant name is required");
+              isValid = false;
+            } else {
+              clearError(storeName);
+            }
+
+            // If validation passes, send to PHP
+            if (isValid) {
+              try {
+                // Create FormData to send to PHP
+                const formData = new FormData(form);
+                formData.append("email", email.value);
+                formData.append(
+                  "sub",
+                  "New Partner Application: " + storeName.value
+                );
+                formData.append(
+                  "message",
+                  form.querySelector('textarea[name="message"]').value ||
+                    "No message provided"
+                );
+
+                // Send to PHP
+                const response = await fetch("inc/sendemail.php", {
+                  method: "POST",
+                  body: formData,
+                });
+
+                if (response.ok) {
+                  showAlert(
+                    "partnersAlert",
+                    "success",
+                    "Application submitted successfully! We'll review it shortly."
+                  );
+                  form.reset();
+                  document.querySelector(".current").textContent = "0";
+                } else {
+                  showAlert(
+                    "partnersAlert",
+                    "error",
+                    "Error submitting application. Please try again."
+                  );
+                }
+              } catch (error) {
+                console.error("Form submission error:", error);
+                showAlert(
+                  "partnersAlert",
+                  "error",
+                  "Error submitting application. Please try again."
+                );
+              }
+            } else {
+              showAlert(
+                "partnersAlert",
+                "error",
+                "Please fix the errors above"
+              );
+            }
+          });
+
+        // ======================================
+        // REAL-TIME VALIDATION
+        // ======================================
+
+        document.querySelectorAll("input, select").forEach((field) => {
+          field.addEventListener("blur", () => {
+            if (field.value && field.classList.contains("error")) {
+              clearError(field);
+            }
+          });
+        });
+
+        // ======================================
+        // INITIALIZE APPLICATION
+        // ======================================
+
+        document.addEventListener("DOMContentLoaded", () => {
+          loadCountries();
+          initializeCitySelect();
+          FormManager.init();
+        });
+      </script>
+    </div>
+  </body>
+</html>
