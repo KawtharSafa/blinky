@@ -850,6 +850,7 @@
   font-size: 48px;
   font-weight: 700;
   color: #FF391D;
+  /* color: #F47025; */
   margin-bottom: 5px;
   letter-spacing: -0.5px;
   text-align: center;
@@ -1493,11 +1494,6 @@
     padding: 0 30px;
   }
 
-  /* .partnership-plan-section .theme-title h2 {
-    font-size: 44px;
-    margin-bottom: 8px;
-  } */
-
   .partnership-plan-section .theme-title.text-center p {
     font-size: 17px;
   }
@@ -1639,10 +1635,6 @@
     margin-bottom: 150px;
   }
 
-  /* .partnership-plan-section .theme-title h2 {
-    font-size: 48px;
-  } */
-
   .partner-container {
     padding: 0 40px;
   }
@@ -1763,6 +1755,7 @@
   .contact-section-header.theme-title h2 {
     font-size: 58px;
     color: #FF391D;
+    /* color: #F47025; */
   }
 }
 

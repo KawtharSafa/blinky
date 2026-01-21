@@ -1,6 +1,9 @@
-#theme-main-banner .container .button-grp,
-.theme-main-header.fixed {
+#theme-main-banner .container .button-grp {
 	background: #ff391d;
+}
+
+.theme-main-header.fixed {
+	background: #F47025;
 }
 
 .theme-title h2,
@@ -11,7 +14,8 @@
 #theme-main-banner.banner-three .container .button-grp:hover,
 .blog-details .blog-meta-wrapper .social-share li:hover a,
 .blog-details .blog-meta-wrapper .post-meta-data .sub-heading {
-	color: #fb8b7c;
+	/* color: #F47025; */
+	color: #ff391d;
 }
 
 #theme-main-banner .container .button-grp:hover {

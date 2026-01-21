@@ -1,19 +1,15 @@
-#theme-main-banner .container .button-grp,
-.theme-main-header.fixed {
+#theme-main-banner .container .button-grp {
 	background: #FF391D;
+}
+
+.theme-main-header.fixed {
+	background: #F47025;
+	opacity: 0.98;
 }
 
 .our-features {
 	color: #f04d2e;
 }
-
-/* .theme-title h2, .theme-title h1,
-.our-features .single-feature i,
-.theme-footer .bottom-footer .footer-menu li a:hover,
-.theme-footer .footer-main-content .footer-list .title a:hover,
-#theme-main-banner.banner-three .container .button-grp:hover {
-	color: #f04d2e;
-} */
 
 #theme-main-banner .container .button-grp:hover {
 	background: #f0bc19;
