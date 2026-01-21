@@ -523,12 +523,12 @@
             <!-- ===================== -->
             <!-- Contact Form -->
             <!-- ===================== -->
-            <div class="contact-right-column">
+            <!-- <div class="contact-right-column">
               <div class="main-form-wrapper">
                 <h3>Send a Message</h3>
 
                 <form
-                  action="inc/sendemail.php"
+                  action="inc/sendmessage.php"
                   method="post"
                   class="contact-us-form form-validation"
                   novalidate
@@ -565,6 +565,48 @@
 
                   <div class="theme-button">
                     <input type="submit" value="Send Request" />
+                  </div>
+                </form>
+              </div>
+            </div> -->
+
+            <div class="contact-right-column">
+              <div class="main-form-wrapper">
+                <h3>Send a Message</h3>
+
+                <form id="contactForm" class="contact-us-form">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    aria-label="Your Name"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    aria-label="Email Address"
+                  />
+
+                  <input
+                    type="text"
+                    name="sub"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                  />
+
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    aria-label="Your Message"
+                  ></textarea>
+
+                  <div class="theme-button">
+                    <input type="submit" value="Send Request"/>
                   </div>
                 </form>
               </div>
@@ -806,6 +848,35 @@
             .addTo(map)
             .openPopup();
         }
+      </script>
+
+      <!-- ===================== -->
+      <!-- JS for mailto -->
+      <!-- ===================== -->
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = encodeURIComponent(this.name.value.trim());
+            const email = encodeURIComponent(this.email.value.trim());
+            const sub = encodeURIComponent(
+              this.sub.value.trim() || "No Subject"
+            );
+            const message = encodeURIComponent(this.message.value.trim());
+
+            if (!name || !email || !message) {
+              alert("Please fill in all required fields.");
+              return;
+            }
+
+            // Construct mailto link
+            const mailtoLink = `mailto:info@blinkylb.com?subject=${sub}&body=Name:%20${name}%0AEmail:%20${email}%0A%0AMessage:%0A${message}`;
+
+            // Open default email client
+            window.location.href = mailtoLink;
+          });
       </script>
 
       <script>

@@ -8,8 +8,6 @@
    
 */
 
-
-
 @media (min-width: 992px) {
   .container {
     padding-left: 0 !important;
@@ -50,11 +48,6 @@
   #client-slider .MS-content .item {
     width: 50%;
   }
-
-  /* .app-screenshot .mockup-one {
-    width: 432px;
-    bottom: -57px;
-  } */
 
   .apps-overview .main-bg-wrapper li {
     padding-bottom: 65px;
@@ -110,10 +103,6 @@
   .theme-counter .single-box {
     padding: 0 10px;
   }
-
-  /* .app-screenshot .mockup-two {
-    width: 53%;
-  } */
 
   .client-section.style-two {
     padding: 140px 0 170px 0;
@@ -430,18 +419,9 @@
     font-size: 34px;
   }
 
-  /* .app-screenshot .mockup-one {
-    width: 512px;
-    bottom: -95px;
-  } */
-
   .theme-main-header .shape-one {
     top: -125px;
   }
-
-  /* .app-screenshot .mockup-two {
-    width: 54%;
-  } */
 
   .theme-footer .footer-main-content [class*="col-"] {
     min-height: 250px;
@@ -494,16 +474,10 @@
   #theme-main-banner .container h1 br,
   #theme-main-banner .container p br,
   .apps-overview .bg-shape,
-  .app-screenshot .mockup-one,
   .theme-title h2 br,
-  .theme-title h1 br,
-  .app-screenshot .mockup-two {
+  .theme-title h1 br {
     display: none;
   }
-
-  /* .app-screenshot .main-sldier-wrapper {
-    padding-top: 80px;
-  } */
 
   .client-section .video-content .opacity .text {
     left: 20px;
@@ -517,7 +491,6 @@
 
   .apps-overview .main-bg-wrapper.color-two {
     background-color: #fff;
-    /* background: -webkit-linear-gradient(#ff9d003f, #FFD9A03f); */
   }
 
   .partnership-plan-section .nav-tab-wrapper {
@@ -1520,10 +1493,10 @@
     padding: 0 30px;
   }
 
-  .partnership-plan-section .theme-title h2 {
+  /* .partnership-plan-section .theme-title h2 {
     font-size: 44px;
     margin-bottom: 8px;
-  }
+  } */
 
   .partnership-plan-section .theme-title.text-center p {
     font-size: 17px;
@@ -1612,9 +1585,10 @@
     margin-bottom: 140px;
   }
 
+  /* 
   .partnership-plan-section .theme-title h2 {
     font-size: 46px;
-  }
+  } */
 
   .partner-container {
     padding: 0 40px;
@@ -1665,9 +1639,9 @@
     margin-bottom: 150px;
   }
 
-  .partnership-plan-section .theme-title h2 {
+  /* .partnership-plan-section .theme-title h2 {
     font-size: 48px;
-  }
+  } */
 
   .partner-container {
     padding: 0 40px;
@@ -1714,82 +1688,6 @@
     line-height: 1.4;
   }
 }
-
-/* ===================================
-   TABLET (iPad & Medium Devices)
-   =================================== */
-/* @media (max-width: 1024px) {
-  .app-screenshot .main-sldier-wrapper {
-    padding-top: 120px;
-  }
-
-  .app-screenshot .mockup-two {
-    width: 45%;
-    bottom: 40px;
-  }
-} */
-
-/* ===================================
-   MOBILE (Phone View)
-   =================================== */
-/* @media (max-width: 768px) {
-  .app-screenshot .main-sldier-wrapper {
-    padding-top: 60px;
-  }
-
-  .app-screenshot .main-sldier-wrapper .wrapper {
-    padding: 0 15px;
-  }
-
-  .app-screenshot .screenshot-container {
-    padding-bottom: 50px;
-  }
-
-  .app-screenshot .mockup-two {
-    width: 65%;
-    bottom: 20px;
-  }
-} */
-
-/* ===================================
-   SMALL MOBILE (Phones)
-   =================================== */
-/* @media (max-width: 480px) {
-  .app-screenshot .main-sldier-wrapper {
-    padding-top: 40px;
-  }
-
-  .app-screenshot .main-sldier-wrapper .wrapper {
-    padding: 0 10px;
-  }
-
-  .app-screenshot .screenshot-container {
-    padding-bottom: 30px;
-  }
-
-  .app-screenshot .mockup-two {
-    width: 80%;
-    bottom: 10px;
-  }
-
-  .app-screenshot .screenshot-container .wave {
-    height: 60px;
-  }
-} */
-
-/* ===================================
-   EXTRA SMALL MOBILE (Small Phones)
-   =================================== */
-/* @media (max-width: 360px) {
-  .app-screenshot .main-sldier-wrapper {
-    padding-top: 30px;
-  }
-
-  .app-screenshot .mockup-two {
-    width: 90%;
-    bottom: 5px;
-  }
-} */
 
 /* ===============================
    HOVER EFFECTS (DESKTOP ONLY)
@@ -1938,5 +1836,139 @@
     width: 50px;
     height: 50px;
     font-size: 1.2rem;
+  }
+}
+
+/* ================================
+      App Screenshots Resp 
+==================================*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .app-screenshot .mockup-one {
+    width: 452px;
+    /* bottom: -10px; */
+  }
+
+  .app-screenshot .mockup-two {
+    width: 53%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .app-screenshot .mockup-one {
+    width: 512px;
+    bottom: -95px;
+  }
+
+  .app-screenshot .mockup-two {
+    width: 54%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .app-screenshot {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    bottom: 30px;
+  }
+
+  .app-screenshot .screenshot-container {
+    padding-top: 0px;
+    margin-top: 0;
+  }
+
+  .app-screenshot .mockup-one,
+  .app-screenshot .mockup-two {
+    width: 70%;
+  }
+
+  .app-screenshot .main-sldier-wrapper {
+    padding-top: 80px;
+  }
+
+}
+
+@media (max-width: 596px) {
+
+  .app-screenshot .mockup-one,
+  .app-screenshot .mockup-two {
+    width: 92%;
+  }
+
+  .app-screenshot .main-sldier-wrapper img {
+    transform: scale(0.99);
+    min-width: calc(100% - 8px);
+    border-radius: 60px;
+    box-shadow: 1px rgba(223, 223, 223, 0.5);
+  }
+
+  .app-screenshot .main-sldier-wrapper {
+    top: -2px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 429px) {
+
+  .app-screenshot .mockup-one,
+  .app-screenshot .mockup-two {
+    width: 82%;
+  }
+
+  .app-screenshot .main-sldier-wrapper img {
+    transform: none;
+    min-width: calc(100% - 6px);
+    width: auto;
+    border-radius: 55px;
+    box-shadow: 1px rgba(223, 223, 223, 0.5);
+  }
+
+  .app-screenshot .main-sldier-wrapper {
+    top: -2px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 379px) {
+
+  .app-screenshot .mockup-one,
+  .app-screenshot .mockup-two {
+    width: 73%;
+  }
+
+  .app-screenshot .main-sldier-wrapper img {
+    transform: none;
+    border-radius: 40px;
+    box-shadow: 1px rgba(223, 223, 223, 0.5);
+  }
+
+  .app-screenshot .main-sldier-wrapper {
+    top: 0px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 295px) {
+
+  .app-screenshot .mockup-one,
+  .app-screenshot .mockup-two {
+    width: 70%;
+  }
+
+  .app-screenshot .main-sldier-wrapper img {
+    transform: scale(1.026);
+    border-radius: 40px;
+    box-shadow: 1px rgba(223, 223, 223, 0.5);
+  }
+
+  .app-screenshot .main-sldier-wrapper {
+    top: -3.5px;
+    left: 10px;
   }
 }
